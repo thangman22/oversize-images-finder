@@ -10,7 +10,7 @@
     "yargs": "^15.3.1"
   },
   "name": "oversize-images-finder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Warat Wongmaneekit",
   "license": "Apache-2.0",

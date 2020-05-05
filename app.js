@@ -7,16 +7,25 @@ const scrolling = ora('Wait for page scrolling....\n')
 const consola = require('consola')
 const Box = require('cli-box')
 const { autoScroll, processImage, percentDiff, pushTotable, printTable } = require('./utils')
-const argv = require('yargs').argv
+
+const argv = require('yargs').option('url', {
+  alias: 'u',
+  describe: 'URL of page'
+})
+.option('headless', {
+  alias: 'h',
+  type: 'boolean',
+  default: true,
+  describe: 'run on headless mode?'
+})
+.demandOption(['url'], 'Please define url for analyze')
+.help()
+.argv
+
 const url = argv.url;
-const headless = argv.headless || true;
+const headless = argv.headless;
 
 (async () => {
-  if (!url) {
-    consola.error('Please define URL')
-    process.exit(-1)
-  }
-
   if (!validUrl.isUri(url)) {
     consola.error('URL is invalid')
     process.exit(-1)

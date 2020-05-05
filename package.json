@@ -9,13 +9,13 @@
     "valid-url": "^1.0.9",
     "yargs": "^15.3.1"
   },
-  "name": "image-oversize-finder",
+  "name": "oversize-images-finder",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Warat Wongmaneekit",
   "license": "Apache-2.0",
   "bin": {
-    "oversize-image-finder": "./app.js"
+    "oversize-images-finder": "./app.js"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

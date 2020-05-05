@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "cli-box": "^6.0.9",
+    "cli-table3": "^0.6.0",
+    "colors": "^1.4.0",
+    "consola": "^2.11.3",
+    "ora": "^4.0.4",
+    "puppeteer": "^3.0.0",
+    "valid-url": "^1.0.9",
+    "yargs": "^15.3.1"
+  },
+  "name": "image-oversize-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Warat Wongmaneekit",
+  "license": "Apache-2.0",
+  "bin": {
+    "oversize-image-finder": "./app.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
